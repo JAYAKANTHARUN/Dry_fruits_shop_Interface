@@ -1,6 +1,6 @@
 import pymysql
 
-db=pymysql.connect(host="localhost",user="root",passwd="legacy4312",database="fin_project")
+db=pymysql.connect(host="localhost",user="root",passwd="root",database="dryfruitshop")
 c=db.cursor()
     
 def add(L):

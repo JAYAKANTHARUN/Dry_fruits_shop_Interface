@@ -1,6 +1,6 @@
 import pymysql
 def create_table():
-    db=pymysql.connect(host="localhost",user="root",passwd="legacy4312",database="fin_project")
+    db=pymysql.connect(host="localhost",user="root",passwd="root",database="dryfruitshop")
     c=db.cursor()
     c.execute("create table stock(item_code integer primary key,item varchar(30),price_per_kg float,quantity_in_kg float)")
     c.execute("insert into stock values(101,'cashewnut',500,15)")

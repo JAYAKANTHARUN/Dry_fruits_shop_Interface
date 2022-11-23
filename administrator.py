@@ -8,7 +8,7 @@ from PIL import ImageTk,Image
 root=Tk()
 
 root.title("DRY FRUIT SHOP")
-root.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+root.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
 root.geometry("350x200")
 code1=StringVar()
 name1=StringVar()
@@ -64,7 +64,7 @@ def tksearch():
     L=[int(c)]
     a=P.search(L)
     top=Toplevel()
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     tv=Treeview(top,columns=(1,2,3,4),show="headings",height="10")
     tv.grid(row=1,column=0)
     tv.heading(1,text="Code")
@@ -77,7 +77,7 @@ def tksearch():
 def add_window():
     top=Toplevel()
     top.geometry("400x200")
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     l1=Label(top,text="ENTER ITEM CODE         ",font=("AgencyFB","12","bold"),bg="#FFFF66")
     l1.grid(row=0,column=0)
     e1=Entry(top,textvariable=code1,width=25)
@@ -100,7 +100,7 @@ def add_window():
 def delete_window():
     top=Toplevel()
     top.geometry("350x100")
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     l1=Label(top,text="ENTER ITEM CODE     ",font=("AgencyFB","12","bold"),bg="#66FF66")
     l1.grid(row=0,column=0)
     e1=Entry(top,textvariable=code1)
@@ -111,7 +111,7 @@ def delete_window():
 def updatename_window():
     top=Toplevel()
     top.geometry("410x110")
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     l1=Label(top,text="ENTER ITEM CODE                ",font=("AgencyFB","12","bold"),bg="#FF99FF")
     l1.grid(row=0,column=0)
     e1=Entry(top,textvariable=code1)
@@ -126,7 +126,7 @@ def updatename_window():
 def updateprice_window():
     top=Toplevel()
     top.geometry("410x110")
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     l1=Label(top,text="ENTER ITEM CODE     ",font=("AgencyFB","12","bold"),bg="#FFCC00")
     l1.grid(row=0,column=0)
     e1=Entry(top,textvariable=code1)
@@ -141,7 +141,7 @@ def updateprice_window():
 def updatequantity_window():
     top=Toplevel()
     top.geometry("610x110")
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     l1=Label(top,text="ENTER ITEM CODE                    ",font=("AgencyFB","12","bold"),bg="#00CCFF")
     l1.grid(row=0,column=0)
     e1=Entry(top,textvariable=code1)
@@ -156,7 +156,7 @@ def updatequantity_window():
 def display_window():
     a=P.display()
     top=Toplevel()
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     tv=Treeview(top,columns=(1,2,3,4),show="headings",height="20")
     tv.grid(row=1,column=0)
     tv.heading(1,text="CODE")
@@ -168,7 +168,7 @@ def display_window():
         
 def search_window():
     top=Toplevel()
-    top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     top.geometry("310x110")
     l1=Label(top,text="ENTER ITEM CODE",font=("AgencyFB","12","bold"),bg="#66FF66")
     l1.grid(row=0,column=0)
@@ -180,7 +180,7 @@ def search_window():
 def invoice_history():
     h=P.invoicehist()
     top_hist=Toplevel()
-    top_hist.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    top_hist.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     tv=Treeview(top_hist,columns=(1,2,3,4,5,6,7,8,9),show="headings",height="30")
     tv.grid(row=1,column=0)
     tv.column(1,width=100)
@@ -205,7 +205,7 @@ def invoice_history():
 def admin1():
     admin_top=Toplevel()
     admin_top.geometry("410x430")
-    admin_top.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    admin_top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     b1=Button(admin_top,text="         ADD STOCK         ",font=("AgencyFB","12","bold"),command=add_window,bg="#FFFFFF")
     b1.grid(row=0,column=1,columnspan=1,pady=10,padx=10,ipadx=100)
     b2=Button(admin_top,text="    DISPLAY STOCK     ",font=("AgencyFB","12","bold"),command=display_window,bg="#FF66FF")
@@ -244,7 +244,7 @@ def adm_login():
     global t1
     global t2
     toplog=Toplevel()
-    toplog.iconbitmap(r"E:\PROJECT\shopping_cart.ico")
+    toplog.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
     toplog.geometry("350x200")
     label1=Label(toplog,text="LOGIN PAGE",font=("AgencyFB","14","bold"),bg="#FF99FF")
     label1.grid(row=1,column=2)
