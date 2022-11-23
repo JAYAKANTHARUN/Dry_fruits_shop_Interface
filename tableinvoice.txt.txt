@@ -1,0 +1,11 @@
+create table invoice
+(invoiceno integer,
+indate date,
+item varchar(20),
+price float,
+qty float,
+total float,
+mode varchar(20),
+custname varchar(30),
+address varchar(150),
+phone varchar(20));
