@@ -9,7 +9,7 @@ root=Tk()
 
 root.title("DRY FRUIT SHOP")
 root.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
-root.geometry("350x200")
+root.geometry("350x400")
 code1=StringVar()
 name1=StringVar()
 price1=StringVar()
@@ -203,6 +203,7 @@ def invoice_history():
         tv.insert("","end",values=i)
     
 def admin1():
+    global admin_top
     admin_top=Toplevel()
     admin_top.geometry("410x430")
     admin_top.iconbitmap(r"D:\dry_fruits_shop_interface\shopping_cart.ico")
@@ -228,11 +229,13 @@ def customer():
     c.add_to_cart()
 
 def login():
+    global toplog
     unm1=unm.get()
     pwd1=pwd.get()
     if unm1=="admin" and pwd1=="1234":
         t1.delete(0,END)
         t2.delete(0,END)
+        toplog.destroy()
         admin1()
     else:
         messagebox.showerror("Error","Invalid Username or Password")
@@ -241,6 +244,7 @@ def login():
         t1.focus_set()   
         
 def adm_login():
+    global toplog
     global t1
     global t2
     toplog=Toplevel()
